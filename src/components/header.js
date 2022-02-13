@@ -1,14 +1,13 @@
 const Header = {
-    render() {
-        return /*html */`
-        <div class="max-w-full mx-atuo">
-        <header class="">
+  render() {
+    return /*html */`
+        <header class="fixed w-full bg-white pb-4">
           <div class="bg-gray-200 flex justify-between">
             <div></div>
             <div class="text-black mr-40 my-1">
               <div class="inline-block">
-                <a class="hover:text-yellow-600  duration-300" href="">đăng ký</a> | <a
-                  class="hover:text-yellow-600 duration-300" href="">đăng nhập</a>
+                <a class="hover:text-yellow-600  duration-300" href="/signup">đăng ký</a> | <a
+                  class="hover:text-yellow-600 duration-300" href="/signin">đăng nhập</a>
               </div>
             </div>
           </div>
@@ -21,7 +20,7 @@ const Header = {
             </div>
             <nav>
               <ul>
-                <li class="inline-block px-9 font-lg text-xl hover:text-yellow-600 duration-300"><a href="">Trang chủ</a>
+                <li class="inline-block px-9 font-lg text-xl hover:text-yellow-600 duration-300"><a href="/">Trang chủ</a>
                 </li>
                 <li class="inline-block px-9 font-lg text-xl hover:text-yellow-600 duration-300"><a href="">Sản Phẩm </a>
                 </li>
@@ -44,5 +43,6 @@ const Header = {
           </div>
         </header>
         `;
-    },
+  },
 };
+export default Header;

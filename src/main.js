@@ -1,4 +1,7 @@
 import Navigo from "navigo";
+import HomePage from "./pages/home";
+import signIn from "./pages/signIn";
+import signUp from "./pages/signUp";
 
 const router = new Navigo("/", { linksSelector: "a" });
 const print = async (content, id) => {
@@ -10,8 +13,9 @@ router.on({
     "/":() => print(HomePage),
     "/product":() => print(Product),
     "/product/:id": ({data}) => print(DetailProduct , data.id),
-    "/signup": () => print(Signup),
-    "/signin": () => print(Signin),
+
+    "/signup": () => print(signUp),
+    "/signin": () => print(signIn),
 
 
     //////////admin/////////
