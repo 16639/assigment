@@ -1,14 +1,22 @@
 const Header = {
   render() {
     return /*html */`
-        <header class="fixed w-full bg-white pb-4">
-          <div class="bg-gray-200 flex justify-between">
+        <header class=" w-full bg-white pb-4">
+          <div class="bg-gray-100 flex justify-between">
             <div></div>
-            <div class="text-black mr-40 my-1">
-              <div class="inline-block">
-                <a class="hover:text-yellow-600  duration-300" href="/signup">đăng ký</a> | <a
-                  class="hover:text-yellow-600 duration-300" href="/signin">đăng nhập</a>
-              </div>
+            <div class="text-black mr-20 my-1">
+              <div class="dropdown inline-block relative">
+              <button class="text-gray-700 font-semibold py-2 px-6 rounded inline-flex items-center">
+                <span> 
+                  <img src="https://cdn-icons.flaticon.com/png/512/1144/premium/1144760.png?token=exp=1644765314~hmac=66caeaa1292d6b6267c35c2da3b67296" alt="" width="25">
+                </span>
+              </button>
+              <ul class="dropdown-content absolute hidden text-gray-700 pt-1">
+                <li><a class=" bg-white hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap" href="/signin">đăng nhập</a></li>
+                <li><a class=" bg-white hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap" href="/signup">đăng ký</a></li>
+                <li><a class=" bg-white hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap" href="#">đăng xuất</a></li>
+              </ul>
+            </div>
             </div>
           </div>
     
@@ -22,11 +30,11 @@ const Header = {
               <ul>
                 <li class="inline-block px-9 font-lg text-xl hover:text-yellow-600 duration-300"><a href="/">Trang chủ</a>
                 </li>
-                <li class="inline-block px-9 font-lg text-xl hover:text-yellow-600 duration-300"><a href="">Sản Phẩm </a>
+                <li class="inline-block px-9 font-lg text-xl hover:text-yellow-600 duration-300"><a href="/product">Sản Phẩm </a>
                 </li>
                 <li class="inline-block px-9 font-lg text-xl hover:text-yellow-600 duration-300"><a href="">Bài Viết</a>
                 </li>
-                <li class="inline-block px-9 font-lg text-xl hover:text-yellow-600 duration-300"><a href="">Liên Hệ</a></li>
+                <li class="inline-block px-9 font-lg text-xl hover:text-yellow-600 duration-300"><a href="/contact">Liên Hệ</a></li>
               </ul>
             </nav>
     
@@ -36,7 +44,7 @@ const Header = {
                 <li class="inline-block px-4 hover:text-yellow-600 duration-300 "><input class="border border-black pl-1"
                     type="text" id="search" autocomplete="off" placeholder="tìm kiếm..."> <button
                     type="button">Search</button></li>
-                <li class="inline-block  hover:text-yellow-600 duration-300 relative"><a href="">Cart<span
+                <li class="inline-block  hover:text-yellow-600 duration-300 relative"><a href="/cart">Cart<span
                       class="absolute font-lg top-2 left-8 px-2 rounded-full bg-yellow-600 text-white">0</span></a></li>
               </ul>
             </div>

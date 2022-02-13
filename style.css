@@ -41,4 +41,10 @@
     font-size: 100px;
     font-weight: 500;
 }
-
+.dropdown{
+    width: 111px;
+    z-index: 1;
+}
+.dropdown:hover > .dropdown-content {
+	display: block;
+}
