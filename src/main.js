@@ -1,6 +1,8 @@
 import Navigo from "navigo";
+import News from "./components/news";
 import Cart from "./pages/cart";
 import Contact from "./pages/contact";
+import DetailNewsPage from "./pages/DetailNews";
 import HomePage from "./pages/home";
 import Product from "./pages/product";
 import signIn from "./pages/signIn";
@@ -19,6 +21,8 @@ router.on({
     "/signin": () => print(signIn),
     "/product":() => print(Product),
     "/product/:id": ({data}) => print(DetailProduct, data.id),
+    "/news": () => print(News),
+    "/news/:id": ({ data }) => print(DetailNewsPage, data.id),
     "/cart": () => print(Cart),
     "/contact": () => print(Contact),
 

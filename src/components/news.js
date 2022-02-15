@@ -1,26 +1,26 @@
-import style from "./news.module.css";
-import axios from 'axios';
-import { getAll } from "../api/post";
-const News = {
-    async render() {
-        const { data } = await getAll()
-        return /* html */`
-            <h2 class="font-semibold text-2xl text-blue-900 my-4 uppercase">Tin tức học lập</h2>
-            <div>
-                <div class="grid grid-cols-3 gap-8">
-                        ${data.map((post) => /*html */`
-                                    <div class="${style["news-item"]} border p-4">
-                                        <div class="news-img">
-                                            <a href="/news/${post.id}">
-                                                <img src="${post.img}" />
-                                            </a>
-                                        </div>
-                                        <h3 class="my-3"><a href="/news/${post.id}" class="font-semibold text-orange-500">${post.title}</a></h3>
-                                        <p class="text-sm text-gray-600">${post.desc}</p>
-                                    </div>
-                            `).join("")}
-                </div>
-            </div>`;
+import footer from "../components/footer";
+import header from "../components/header";
+//import data from "../data";
+import axios from "axios";
+import { get } from "../api/post";
+
+const DetailNewPage = { 
+    async render(id){
+        const { data } = await get(id);
+        return /*html */`
+        <div class = "container"> 
+            ${header.render()}
+            <div class= "my-10 max-w-7xl mx-auto" >
+                    <h1 class="py-5 font-semibold text-xl text-orange-500 " >${data.title}</h1>
+                    <img src="${data.img}" />
+                    <div class = "py-5" >${data.desc}</div>
+            </div>
+            ${footer.render()}
+        </div>
+        `;
+        
     },
+
 };
-export default News;
+
+export default DetailNewPage;

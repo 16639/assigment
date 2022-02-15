@@ -32,7 +32,7 @@ const Header = {
                 </li>
                 <li class="inline-block px-9 font-lg text-xl hover:text-yellow-600 duration-300"><a href="/product">Sản Phẩm </a>
                 </li>
-                <li class="inline-block px-9 font-lg text-xl hover:text-yellow-600 duration-300"><a href="">Bài Viết</a>
+                <li class="inline-block px-9 font-lg text-xl hover:text-yellow-600 duration-300"><a href="/news">Bài Viết</a>
                 </li>
                 <li class="inline-block px-9 font-lg text-xl hover:text-yellow-600 duration-300"><a href="/contact">Liên Hệ</a></li>
               </ul>
