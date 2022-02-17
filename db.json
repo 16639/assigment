@@ -86,7 +86,6 @@
     }
   ],
   "products": [
-
     {
       "createdAt": "2022-01-18T18:18:10.403Z",
       "name": "Rodney Brakus",
@@ -125,22 +124,15 @@
       "img": "http://placeimg.com/640/480/transport",
       "desc": "New ABC 13 9370, 13.3, 5th Gen CoreA5-8250U, 8GB RAM, 256GB SSD, power UHD Graphics, OS 10 Home, OS Office A & J 2016",
       "id": "100",
-      "price":"100.000"
+      "price": "100.000"
     }
   ],
-
   "users": [
     {
       "email": "khoa1@gmail.com",
-      "password": "$2a$10$D4sTCljqR.qy0Fkr2JmkiueYudlv/6ziN3UkvJPzPpVn6HZI1.GWC",
+      "password": "$2a$10$M6M7slFM4jcDjInNgX7b/u/IabXC/zHVp0JFRc.QdyqeZ.zYaweKC",
       "username": "nguyễn khoa",
       "id": 1
-    },
-    {
-      "email": "khoa2@gmail.com",
-      "password": "$2a$10$NOby8B.pAeGOP8NfEQNhm.tPjG0yLeOR18/BP8B3mkUbxIFimvrHi",
-      "username": "Khoa",
-      "id": 2
     }
   ]
 }

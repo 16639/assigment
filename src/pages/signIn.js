@@ -10,7 +10,7 @@ const signIn = {
         <div class="container max-w-sm mx-auto flex-1 flex flex-col items-start justify-center px-2">
             <div class="bg-white px-6 py-8 rounded shadow-md text-black w-full">
                 <h1 class="mb-8 text-3xl text-center">Đăng Nhập</h1>
-                <from id="formSignIn">
+                <form id="formSignIn">
                     <input 
                         type="text"
                         class="block border border-grey-light w-full p-3 rounded mb-4"
@@ -23,13 +23,10 @@ const signIn = {
                         id="password"
                         placeholder="Mật Khẩu" />
                     <div class=" pb-2 pl-2 ">
-                    <a class="text-gray-400" href=""> quên mật khẩu</a>
                     </div>
 
-                    <button
-                        class="w-full text-center py-3 rounded bg-green-500 text-white hover:bg-green-600 focus:outline-none my-1"
-                    >Đăng nhập</button>
-                    </from>
+                    <button class="w-full text-center py-3 rounded bg-green-500 text-white hover:bg-green-600 focus:outline-none my-1">Đăng nhập</button>
+                </form>
 
                 <div class="text-center text-grey-dark mt-6">
                 Bạn chưa có tài khoản
@@ -45,27 +42,30 @@ const signIn = {
 
     afterRender(){
         const formSignIn = document.querySelector('#formSignIn');
-        formSignIn.addEventListener('submit', async (e) =>{
+        formSignIn.addEventListener('submit', async (e) => {
             e.preventDefault();
-            try {
+            try{
                 const response = await signin({
                     email: document.querySelector('#email').value,
                     password: document.querySelector('#password').value,
                 });
-                alert("hiii")
-                localStorage.setItem('user', JSON.stringify(response.data.user));
+                console.log(response);
+                // setItem: input vao storage gom co key:value (key: "user", value la reponse da nhan object.data(lay thg data).user(trong data lay user))
+                localStorage.setItem("user", JSON.stringify(response.data.user));
                 if(response.data.user.id === 1){
-                    document.location.href="/admin/news";
+                    document.location.href="/admin/dashboard";
                 } else {
                     document.location.href="/";
                 }
 
             } catch (error) {
-                console.log(error.response.data);
-                alert(error.response.data);
+                console.log(error.response.data); 
             }
         });
     }
-
 };
 export default signIn;
+
+// cái này là m ko chạy ra #app
+// nên là css nó ko đổ về
+

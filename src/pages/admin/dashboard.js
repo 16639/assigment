@@ -1,9 +1,7 @@
-import NavAdmin from "../../components/NavAdmin";
 
 const Dashboard = {
     render() {
         return /* html */ ` <div class="min-h-full">
-        ${NavAdmin.render()}
       
         <header class="bg-white shadow">
           <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
@@ -30,3 +28,4 @@ const Dashboard = {
     },
 };
 export default Dashboard;
+

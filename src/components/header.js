@@ -14,7 +14,7 @@ const Header = {
               <ul class="dropdown-content absolute hidden text-gray-700 pt-1">
                 <li><a class=" bg-white hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap" href="/signin">đăng nhập</a></li>
                 <li><a class=" bg-white hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap" href="/signup">đăng kí</a></li>
-
+                <li><a class=" bg-white hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap" href="/admin/dashboard"> ${localStorage.getItem('user') ? '' : ""}ADMIN</a></li>
                 <li><a class=" bg-white hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap" id="logout" href=""> ${localStorage.getItem('user') ? '<button id="logout">đăng xuất</button>' : ""}</a></li>
               </ul>
             </div>
