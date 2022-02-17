@@ -3,15 +3,15 @@ import Header from "../components/header";
 import newArrival from "../components/newArrvial";
 
 const HomePage = {
-    render(){
+    async render(){
         return /*html */`
         <div class="max-w-full mx-atuo">
-            ${Header.render()}
+            ${ Header.render()}
             <div class="">
                 <img src="https://theme.hstatic.net/1000026602/1000811650/14/slideshow_4.jpg?v=534" alt="">
             </div>
-            ${newArrival.render()}
-            ${Footer.render()}
+            ${ await newArrival.render()}
+            ${  Footer.render()}
         </div>`;
     },
 };

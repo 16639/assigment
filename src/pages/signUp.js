@@ -1,3 +1,4 @@
+import {signup} from "../api/user"
 import Footer from "../components/footer";
 import Header from "../components/header";
 
@@ -13,28 +14,22 @@ const signUp = {
                     <input 
                         type="text"
                         class="block border border-grey-light w-full p-3 rounded mb-4"
-                        name="fullname"
+                        id="username"
                         placeholder="Họ và tên" />
 
                     <input 
                         type="text"
                         class="block border border-grey-light w-full p-3 rounded mb-4"
-                        name="email"
+                        id="email"
                         placeholder="Email" />
 
                     <input 
                         type="password"
                         class="block border border-grey-light w-full p-3 rounded mb-4"
-                        name="password"
+                        id="password"
                         placeholder="Mật khẩu " />
-                    <input 
-                        type="password"
-                        class="block border border-grey-light w-full p-3 rounded mb-4"
-                        name="confirm_password"
-                        placeholder="Nhập lại mật khẩu" />
 
                     <button
-                        type="submit"
                         class="w-full text-center py-3 rounded bg-green-500 text-white hover:bg-green-600 focus:outline-none my-1"
                     >Đăng ký</button>
                 </form>
@@ -47,5 +42,24 @@ const signUp = {
     </div>
     ${Footer.render()}`
     },
+    afterRender(){
+        const formSignup = document.querySelector('#formSignUp');
+        formSignup.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            try {
+                const response = await signup({
+                    username: document.querySelector('#username').value,
+                    email: document.querySelector('#email').value,
+                    password: document.querySelector('#password').value,
+                });
+                console.log(response);
+                alert( "đăng ký thành công");
+
+            } catch (error) {
+                console.log(error.response.data);
+                alert(error.response.data);
+            }
+        });
+    }
 };
 export default signUp;

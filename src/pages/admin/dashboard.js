@@ -2,8 +2,7 @@ import NavAdmin from "../../components/NavAdmin";
 
 const Dashboard = {
     render() {
-        return /* html */ `
-        <div class="min-h-full">
+        return /* html */ ` <div class="min-h-full">
         ${NavAdmin.render()}
       
         <header class="bg-white shadow">
@@ -27,9 +26,7 @@ const Dashboard = {
             <!-- /End replace -->
           </div>
         </main>
-      </div>
-        
-        `;
+      </div> `;
     },
 };
 export default Dashboard;

@@ -1,91 +1,141 @@
 {
-    "posts":[
-        {
-            "createdAt": "2022-01-10T07:26:52.549Z",
-            "title": "Annie Stroman",
-            "img": "http://placeimg.com/640/480/fashion",
-            "desc": "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals",
-            "id": 1
-        },
-        {
-            "createdAt": "2022-01-10T20:33:27.477Z",
-            "title": "Yolanda Roob",
-            "img": "http://placeimg.com/640/480/sports",
-            "desc": "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality",
-            "id": 2
-        },
-        {
-            "createdAt": "2022-01-11T03:36:13.571Z",
-            "title": "Rufus Konopelski",
-            "img": "http://placeimg.com/640/480/transport",
-            "desc": "New ABC 13 9370, 13.3, 5th Gen CoreA5-8250U, 8GB RAM, 256GB SSD, power UHD Graphics, OS 10 Home, OS Office A & J 2016",
-            "id": 3
-        },
-        {
-            "createdAt": "2022-01-10T04:45:32.422Z",
-            "title": "Ray Boyle",
-            "img": "http://placeimg.com/640/480/transport",
-            "desc": "New ABC 13 9370, 13.3, 5th Gen CoreA5-8250U, 8GB RAM, 256GB SSD, power UHD Graphics, OS 10 Home, OS Office A & J 2016",
-            "id": 4
-        },
-        {
-            "createdAt": "2022-01-10T10:56:22.073Z",
-            "title": "Jacqueline Hills",
-            "img": "http://placeimg.com/640/480/fashion",
-            "desc": "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design",
-            "id": 5
-        },
-        {
-            "createdAt": "2022-01-11T00:27:12.664Z",
-            "title": "Lee Abbott",
-            "img": "http://placeimg.com/640/480/people",
-            "desc": "New ABC 13 9370, 13.3, 5th Gen CoreA5-8250U, 8GB RAM, 256GB SSD, power UHD Graphics, OS 10 Home, OS Office A & J 2016",
-            "id": 6
-        },
-        {
-            "createdAt": "2022-01-10T14:41:53.412Z",
-            "title": "Muriel Okuneva",
-            "img": "http://placeimg.com/640/480/business",
-            "desc": "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients",
-            "id": 7
-        },
-        {
-            "createdAt": "2022-01-10T16:35:33.134Z",
-            "title": "Tara Gutmann",
-            "img": "http://placeimg.com/640/480/business",
-            "desc": "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles",
-            "id": 8
-        },
-        {
-            "createdAt": "2022-01-10T21:17:56.264Z",
-            "title": "Rudy Trantow",
-            "img": "http://placeimg.com/640/480/city",
-            "desc": "The Football Is Good For Training And Recreational Purposes",
-            "id": 9
-        },
-        {
-            "createdAt": "2022-01-10T23:35:59.996Z",
-            "title": "Wayne Lang V",
-            "img": "http://placeimg.com/640/480/food",
-            "desc": "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles",
-            "id": 10
-        },
-        {
-            "createdAt": "2022-01-10T14:22:10.945Z",
-            "title": "Esther Morar",
-            "img": "http://placeimg.com/640/480/nightlife",
-            "desc": "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles",
-            "id": 11
-        },
-        {
-            "createdAt": "2022-01-10T11:38:45.275Z",
-            "title": "Sonya Prohaska Sr.",
-            "img": "http://placeimg.com/640/480/food",
-            "desc": "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality",
-            "id": 12
-        }
-        
-    ],
-    "product":[],
-    "user":[]
+  "posts": [
+    {
+      "createdAt": "2022-01-10T07:26:52.549Z",
+      "title": "Annie Stroman",
+      "img": "http://placeimg.com/640/480/fashion",
+      "desc": "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals",
+      "id": 1
+    },
+    {
+      "createdAt": "2022-01-10T20:33:27.477Z",
+      "title": "Yolanda Roob",
+      "img": "http://placeimg.com/640/480/sports",
+      "desc": "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality",
+      "id": 2
+    },
+    {
+      "createdAt": "2022-01-11T03:36:13.571Z",
+      "title": "Rufus Konopelski",
+      "img": "http://placeimg.com/640/480/transport",
+      "desc": "New ABC 13 9370, 13.3, 5th Gen CoreA5-8250U, 8GB RAM, 256GB SSD, power UHD Graphics, OS 10 Home, OS Office A & J 2016",
+      "id": 3
+    },
+    {
+      "createdAt": "2022-01-10T04:45:32.422Z",
+      "title": "Ray Boyle",
+      "img": "http://placeimg.com/640/480/transport",
+      "desc": "New ABC 13 9370, 13.3, 5th Gen CoreA5-8250U, 8GB RAM, 256GB SSD, power UHD Graphics, OS 10 Home, OS Office A & J 2016",
+      "id": 4
+    },
+    {
+      "createdAt": "2022-01-10T10:56:22.073Z",
+      "title": "Jacqueline Hills",
+      "img": "http://placeimg.com/640/480/fashion",
+      "desc": "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design",
+      "id": 5
+    },
+    {
+      "createdAt": "2022-01-11T00:27:12.664Z",
+      "title": "Lee Abbott",
+      "img": "http://placeimg.com/640/480/people",
+      "desc": "New ABC 13 9370, 13.3, 5th Gen CoreA5-8250U, 8GB RAM, 256GB SSD, power UHD Graphics, OS 10 Home, OS Office A & J 2016",
+      "id": 6
+    },
+    {
+      "createdAt": "2022-01-10T14:41:53.412Z",
+      "title": "Muriel Okuneva",
+      "img": "http://placeimg.com/640/480/business",
+      "desc": "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients",
+      "id": 7
+    },
+    {
+      "createdAt": "2022-01-10T16:35:33.134Z",
+      "title": "Tara Gutmann",
+      "img": "http://placeimg.com/640/480/business",
+      "desc": "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles",
+      "id": 8
+    },
+    {
+      "createdAt": "2022-01-10T21:17:56.264Z",
+      "title": "Rudy Trantow",
+      "img": "http://placeimg.com/640/480/city",
+      "desc": "The Football Is Good For Training And Recreational Purposes",
+      "id": 9
+    },
+    {
+      "createdAt": "2022-01-10T23:35:59.996Z",
+      "title": "Wayne Lang V",
+      "img": "http://placeimg.com/640/480/food",
+      "desc": "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles",
+      "id": 10
+    },
+    {
+      "createdAt": "2022-01-10T14:22:10.945Z",
+      "title": "Esther Morar",
+      "img": "http://placeimg.com/640/480/nightlife",
+      "desc": "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles",
+      "id": 11
+    },
+    {
+      "createdAt": "2022-01-10T11:38:45.275Z",
+      "title": "Sonya Prohaska Sr.",
+      "img": "http://placeimg.com/640/480/food",
+      "desc": "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality",
+      "id": 12
+    }
+  ],
+  "products": [
+
+    {
+      "createdAt": "2022-01-18T18:18:10.403Z",
+      "name": "Rodney Brakus",
+      "img": "http://placeimg.com/640/480/fashion",
+      "id": "37",
+      "price": "100"
+    },
+    {
+      "createdAt": "2022-01-15T01:54:24.955Z",
+      "name": "Tiffany Wisoky",
+      "img": "http://placeimg.com/640/480/cats",
+      "id": "39",
+      "price": "200"
+    },
+    {
+      "createdAt": "2022-01-19T09:19:10.753Z",
+      "name": "Marilyn Emmerich",
+      "img": "http://placeimg.com/640/480/fashion",
+      "id": "42",
+      "price": "300"
+    },
+    {
+      "createdAt": "2022-01-19T10:56:31.571Z",
+      "name": "Jorge Little",
+      "img": "http://placeimg.com/640/480/technics",
+      "id": "43",
+      "price": "400"
+    },
+    {
+      "createdAt": "2022-01-20T05:27:28.718Z",
+      "name": "Dorothy Reichel",
+      "img": "http://placeimg.com/640/480/transport",
+      "id": "100",
+      "price":"100000"
+    }
+  ],
+
+  "users": [
+    {
+      "email": "khoa1@gmail.com",
+      "password": "$2a$10$D4sTCljqR.qy0Fkr2JmkiueYudlv/6ziN3UkvJPzPpVn6HZI1.GWC",
+      "username": "nguyễn khoa",
+      "id": 1
+    },
+    {
+      "email": "khoa2@gmail.com",
+      "password": "$2a$10$NOby8B.pAeGOP8NfEQNhm.tPjG0yLeOR18/BP8B3mkUbxIFimvrHi",
+      "username": "Khoa",
+      "id": 2
+    }
+  ]
 }

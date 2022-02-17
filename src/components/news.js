@@ -1,6 +1,5 @@
 import footer from "../components/footer";
 import header from "../components/header";
-//import data from "../data";
 import axios from "axios";
 import { get } from "../api/post";
 

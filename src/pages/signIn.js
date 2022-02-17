@@ -1,3 +1,4 @@
+import { signin } from "../api/user";
 import Footer from "../components/footer";
 import Header from "../components/header";
 
@@ -13,20 +14,19 @@ const signIn = {
                     <input 
                         type="text"
                         class="block border border-grey-light w-full p-3 rounded mb-4"
-                        name="email"
+                        id="email"
                         placeholder="Email" />
 
                     <input 
                         type="password"
                         class="block border border-grey-light w-full p-3 rounded mb-4"
-                        name="password"
+                        id="password"
                         placeholder="Mật Khẩu" />
                     <div class=" pb-2 pl-2 ">
                     <a class="text-gray-400" href=""> quên mật khẩu</a>
                     </div>
 
                     <button
-                        type="submit"
                         class="w-full text-center py-3 rounded bg-green-500 text-white hover:bg-green-600 focus:outline-none my-1"
                     >Đăng nhập</button>
                     </from>
@@ -42,5 +42,30 @@ const signIn = {
     </div>
     ${Footer.render()}`;
     },
+
+    afterRender(){
+        const formSignIn = document.querySelector('#formSignIn');
+        formSignIn.addEventListener('submit', async (e) =>{
+            e.preventDefault();
+            try {
+                const response = await signin({
+                    email: document.querySelector('#email').value,
+                    password: document.querySelector('#password').value,
+                });
+                alert("hiii")
+                localStorage.setItem('user', JSON.stringify(response.data.user));
+                if(response.data.user.id === 1){
+                    document.location.href="/admin/news";
+                } else {
+                    document.location.href="/";
+                }
+
+            } catch (error) {
+                console.log(error.response.data);
+                alert(error.response.data);
+            }
+        });
+    }
+
 };
-export default signIn
+export default signIn;
