@@ -7,7 +7,8 @@ import HomePage from "./pages/home";
 import signIn from "./pages/signIn";
 import signUp from "./pages/signUp";
 import Dashboard from "./pages/admin/dashboard";
-import ProductPage from "./pages/product";
+import DetailProduct from "./pages/products/detailPrd";
+import Product from "./pages/products";
 
 
 const router = new Navigo("/", { linksSelector: "a", hash: true });
@@ -36,7 +37,7 @@ router.on({
 
     "/signup": () => print(signUp),
     "/signin": () => print(signIn),
-    "/products":() => print(ProductPage),
+    "/products":() => print(Product),
     "/products/:id": ({data}) => print(DetailProduct, data.id),
     "/news": () => print(News),
     "/news/:id": ({ data }) => print(DetailNewsPage, data.id),
