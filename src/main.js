@@ -6,11 +6,12 @@ import DetailNewsPage from "./pages/DetailNews";
 import HomePage from "./pages/home";
 import signIn from "./pages/signIn";
 import signUp from "./pages/signUp";
-import Dashboard from "./pages/admin/dashboard";
 import DetailProduct from "./pages/products/detailPrd";
 import Product from "./pages/products";
 import NavAdmin from "./components/NavAdmin";
-
+import AdminNews from "./pages/admin/news";
+import addNews from "./pages/admin/news/add";
+import AdminEditNews from "./pages/admin/news/edit";
 
 const router = new Navigo("/", { linksSelector: "a", hash: true });
 const print = async (content, id) => {
@@ -18,22 +19,23 @@ const print = async (content, id) => {
 if(content.afterRender) content.afterRender(id);
 };
 
-// router.on("/admin/*", () => {}, {
-//     before(done, match) {
-//       // do something
-//       if(localStorage.getItem('user')){
-//         const userId = JSON.parse(localStorage.getItem('user')).id;
-//         if(userId === 1){
-//             done();  
-//         } else {
-//             document.location.href="/";
-//         }
-//       } else{
-//           document.location.href="/";
-//       }
+// phải đăng nhập với id === 1 để truy cập được vào router admin
+router.on("/admin/*", () => {}, {
+    before(done, match) {
+      // do something
+      if(localStorage.getItem('user')){
+        const userId = JSON.parse(localStorage.getItem('user')).id;
+        if(userId === 1){
+            done();  
+        } else {
+            document.location.href="/";
+        }
+      } else{
+          document.location.href="/";
+      }
       
-//     }
-//   })
+    }
+  })
 
   router.on({
     "/":() => print(HomePage),
@@ -53,7 +55,7 @@ if(content.afterRender) content.afterRender(id);
     "/admin/product/add": () => print(AdminAddproduct),
     "/admin/product/:id/edit": ({data}) => print(AdminEditproduct, data.id),
     "/admin/news": () => print(AdminNews),
-    "/admin/news/add": () => print(AdminAddNews),
+    "/admin/news/add": () => print(addNews),
     "/admin/news/:id/edit": ({data}) => print(AdminEditNews, data.id),
 });
 
