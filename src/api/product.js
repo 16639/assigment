@@ -8,9 +8,9 @@ export const get = (id) => {
     const url = `/products/${id}`;
     return instance.get(url);
 }
-export const add = (post) => {
+export const add = (products) => {
     const url = `/products`;
-    return instance.post(url, post)
+    return instance.post(url, products)
 }
 export const remove = (id) => {
     const url = `/products/${id}`;
@@ -18,5 +18,5 @@ export const remove = (id) => {
 }
 export const update = (products) => {
     const url = `/products/${products.id}`;
-    return instance.put(url, post)
+    return instance.put(url, products)
 }

@@ -12,6 +12,9 @@ import NavAdmin from "./components/NavAdmin";
 import AdminNews from "./pages/admin/news";
 import addNews from "./pages/admin/news/add";
 import AdminEditNews from "./pages/admin/news/edit";
+import AdminProducts from "./pages/admin/products";
+import addProducts from "./pages/admin/products/add";
+import AdminEditProduct from "./pages/admin/products/edit";
 
 const router = new Navigo("/", { linksSelector: "a", hash: true });
 const print = async (content, id) => {
@@ -32,6 +35,8 @@ router.on("/admin/*", () => {}, {
         }
       } else{
           document.location.href="/";
+          alert=('Bạn chưa được cấp quyền');
+
       }
       
     }
@@ -51,9 +56,9 @@ router.on("/admin/*", () => {}, {
 
     //////////admin/////////
     "/admin/dashboard": () => print(NavAdmin), 
-    "/admin/product": () => print(Adminproduct),
-    "/admin/product/add": () => print(AdminAddproduct),
-    "/admin/product/:id/edit": ({data}) => print(AdminEditproduct, data.id),
+    "/admin/products": () => print(AdminProducts),
+    "/admin/products/add": () => print(addProducts),
+    "/admin/products/:id/edit": ({data}) => print(AdminEditProduct, data.id),
     "/admin/news": () => print(AdminNews),
     "/admin/news/add": () => print(addNews),
     "/admin/news/:id/edit": ({data}) => print(AdminEditNews, data.id),

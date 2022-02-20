@@ -30,7 +30,7 @@ const signIn = {
 
                 <div class="text-center text-grey-dark mt-6">
                 Bạn chưa có tài khoản
-                <a class="no-underline border-b border-blue-200 text-blue-500" href="/sigup">
+                <a class="no-underline border-b border-blue-200 text-blue-500" href="/signup">
                     đăng ký
                 </a>
             </div>
@@ -53,6 +53,7 @@ const signIn = {
                 // setItem: input vao storage gom co key:value (key: "user", value la reponse da nhan object.data(lay thg data).user(trong data lay user))
                 localStorage.setItem("user", JSON.stringify(response.data.user));
                 if(response.data.user.id === 1){
+                    window.setTimeout(response ,"3000");
                     document.location.href="/admin/dashboard";
                 } else {
                     document.location.href="/";

@@ -54,6 +54,7 @@ const signUp = {
                 });
                 console.log(response);
                 alert( "đăng ký thành công");
+                document.location.href="/signin";
 
             } catch (error) {
                 console.log(error.response.data);

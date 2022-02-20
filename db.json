@@ -85,20 +85,11 @@
   ],
   "products": [
     {
-      "createdAt": "2022-01-18T18:18:10.403Z",
-      "name": "Rodney Brakus",
-      "img": "http://placeimg.com/640/480/fashion",
-      "desc": "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles",
-      "id": "37",
-      "price": "100.000"
-    },
-    {
-      "createdAt": "2022-01-15T01:54:24.955Z",
-      "name": "Tiffany Wisoky",
-      "img": "http://placeimg.com/640/480/cats",
-      "desc": "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality",
       "id": "39",
-      "price": "200.000"
+      "name": "Tiffany Wisoky hhhsda",
+      "img": "http://placeimg.com/640/480/cats",
+      "price": "200.000",
+      "desc": ""
     },
     {
       "createdAt": "2022-01-19T09:19:10.753Z",
@@ -123,6 +114,13 @@
       "desc": "New ABC 13 9370, 13.3, 5th Gen CoreA5-8250U, 8GB RAM, 256GB SSD, power UHD Graphics, OS 10 Home, OS Office A & J 2016",
       "id": "100",
       "price": "100.000"
+    },
+    {
+      "id": "PUHsuWF",
+      "name": "áo khoác",
+      "img": "http://res.cloudinary.com/ph16639/image/upload/v1645258068/eyaqb3esuuxk4e2shq1i.jpg",
+      "price": "500.000",
+      "desc": ""
     }
   ],
   "users": [
@@ -131,6 +129,18 @@
       "password": "$2a$10$M6M7slFM4jcDjInNgX7b/u/IabXC/zHVp0JFRc.QdyqeZ.zYaweKC",
       "username": "nguyễn khoa",
       "id": 1
+    },
+    {
+      "email": "khoa2@gmail.com",
+      "password": "$2a$10$nsiawgHaBHAuRjH6baxPeeoX.4.uySSM3EK.hTqLtJx/jVYEiDCca",
+      "username": "admin",
+      "id": 2
+    },
+    {
+      "email": "khoa3@gmail.com",
+      "password": "$2a$10$5NG8/gZ6WfeiYQJrrv3UreHf3OkD78GruznX3dg8DPwFp3I.rgxoG",
+      "username": "nguyễn khoa",
+      "id": 3
     }
   ]
 }

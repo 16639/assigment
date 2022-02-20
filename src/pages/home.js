@@ -14,5 +14,8 @@ const HomePage = {
             ${  Footer.render()}
         </div>`;
     },
+    afterRender(){
+        Header.afterRender()
+    }
 };
 export default HomePage;
