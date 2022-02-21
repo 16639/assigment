@@ -1,6 +1,10 @@
 import { get, update } from "../../../api/product";
 import NavAdmin from "../../../components/NavAdmin";
 import axios from "axios";
+import toastr from "toastr";
+import "toastr/build/toastr.min.css";
+import { reRender } from "../../../utils/rerender";
+
 
 
 const AdminEditProduct = {
@@ -69,7 +73,7 @@ const AdminEditProduct = {
               </div>
             </div>
           </div><br>
-          <button class="bg-blue-500 text-white p-4 mt-5 rounded hover:bg-blue-600" >Thêm mới</button>
+          <button class="bg-blue-500 text-white p-4 mt-5 rounded hover:bg-blue-600" >Cập Nhật</button>
           </form>
         </div>
         <!-- /End replace -->
@@ -99,7 +103,7 @@ const AdminEditProduct = {
           
               // call api cloudinary
               
-                const { data } = await axios.products(CLOUDINARY_API, formData, {
+                const { data } = await axios.post(CLOUDINARY_API, formData, {
                   headers: {
                     "Content-Type": "application/form-data"
                   }
@@ -112,18 +116,9 @@ const AdminEditProduct = {
                 img: imgLink ? imgLink : imgPreview.src,
                 price: document.querySelector('#price-product').value,
                 desc:document.querySelector('#desc-product').value,
-            });
-            
+              
+              });
         });
     },
 };
 export default AdminEditProduct;
-// ow dau 
-// t quen chua doi cai id
-// ok lafm cai reRender nuxa la ok
-// okok
-// b vafo casi t thay cho sai luon =)))
-// mo log len tim loi sai moi biet dc
-// vua nay tuogn thay cai id roi
-// con gi nua ko
-// casi dang xuat

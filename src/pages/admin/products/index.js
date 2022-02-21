@@ -112,6 +112,7 @@ const AdminProducts = {
                   remove(id)
                     .then(() => console.log('Bạn đã xóa thành công'))
                     .then(() => reRender(AdminNews, "#app"));
+                      reRender(AdminProducts, "#AdminProducts");
                 }
             });
         });
