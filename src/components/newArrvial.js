@@ -23,10 +23,8 @@ const newArrival = {
             </div>
             <div class="overlay">
               <div class="title-price text-black">
-                <a href="/#/products/${product.id}" class="text-xl">${product.name}</a>
-                <span class="py-3 text-xl text-red-600 ">${product.price}đ</span><br>
-                <span class="pt-3 font-light line-through text-gray-300" >200.000đ</span>
-                <button type="button" class="px-2 py-2 text-white border border-solid border-black bg-black text-whtie hover:text-red-500">ADD TO CARD</button>
+                <a href="/#/products/${product.id}" class="text-xl">${product.name}</a><br>
+                <span class="py-3 text-xl text-red-600 ">${product.price}</span><br>
               </div>
           </div>
          

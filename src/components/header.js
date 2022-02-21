@@ -45,7 +45,7 @@ const Header = {
                 <li class="inline-block px-4 hover:text-yellow-600 duration-300 "><input class="border border-black pl-1"
                     type="text" id="search" autocomplete="off" placeholder="tìm kiếm..."> <button
                     type="button">Search</button></li>
-                <li class="inline-block  hover:text-yellow-600 duration-300 relative"><a href="/cart">Cart<span
+                <li class="inline-block  hover:text-yellow-600 duration-300 relative"><a href="/cart">Cart<span id="cartNumber"
                       class="absolute font-lg top-2 left-8 px-2 rounded-full bg-yellow-600 text-white">0</span></a></li>
               </ul>
             </div>
@@ -56,14 +56,14 @@ const Header = {
   afterRender(){
     const account = document.querySelector('#account');
     const btnLogout = document.querySelector('#logout');
+    const cartNumber = document.querySelector('#cartNumber');
     account.innerHTML = JSON.parse(localStorage.getItem('user')).email;
     // console.log("account");
     btnLogout.addEventListener('click', function(){
        localStorage.removeItem('user');
-       alert('Ban da logout thanh cong');
+       alert('bạn đã đăng xuất tài khoản');
        reRender(Header, "#header");
     });
-    
 },
 };
 export default Header;
