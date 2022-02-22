@@ -7,6 +7,59 @@
         {
             "src": "/news",
             "dest": "/"
+        },
+        {
+            "src": "/signup",
+            "dest": "/"
+        },
+        {
+            "src": "/signin",
+            "dest": "/"
+        },
+        {
+            "src": "/products",
+            "dest": "/"
+        },
+        {
+            "src": "/products/:id",
+            "dest": "/"
+        },
+        {
+            "src": "/news/:id",
+            "dest": "/"
+        },
+        {
+            "src": "/cart",
+            "dest": "/"
+        },
+        {
+            "src": "/admin/dashboard",
+            "dest": "/"
+        },
+        {
+            "src": "/admin/products",
+            "dest": "/"
+        },
+
+         {
+            "src": "/admin/products/add",
+            "dest": "/"
+        },
+         {
+            "src": "/admin/products/:id/edit",
+            "dest": "/"
+        },
+        {
+            "src": "/admin/news",
+            "dest": "/"
+        },
+         {
+            "src": "/admin/news/add",
+            "dest": "/"
+        },
+        {
+            "src": "/admin/news/:id/edit",
+            "dest": "/"
         }
     ]
 }

@@ -48,7 +48,7 @@ const Cart = {
                 </button>
               </div>
               <span class="text-center w-1/5 font-semibold text-sm">${item.price}</span>
-              <span class="text-center w-1/5 font-semibold text-sm">${item.price}</span>
+              <span class="text-center w-1/5 font-semibold text-sm">${item.price * item.quantity}.000</span>
             </div>
             `).join("") : ``}
             <a href="/products" class="flex font-semibold text-indigo-600 text-sm mt-10">
@@ -59,11 +59,11 @@ const Cart = {
           </div>
     
           <div id="summary" class="w-1/4 px-8 py-10">
-            <h1 class="font-semibold text-2xl border-b pb-8">Order Summary</h1>
+            <h1 class="font-semibold text-2xl border-b pb-8">Thanh Toán</h1>
             <div class="border-t mt-8">
               <div class="flex font-semibold justify-between py-6 text-sm uppercase">
-                <span>Total cost</span>
-                <span>$600</span>
+                <span>Tổng tiền</span>
+                <span></span>
               </div>
               <button class="bg-indigo-500 font-semibold hover:bg-indigo-600 py-3 text-sm text-white uppercase w-full">Checkout</button>
             </div>
@@ -93,5 +93,9 @@ const Cart = {
           })
       }) 
     },
+
+
+
+
 };
 export default Cart;

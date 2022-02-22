@@ -42,3 +42,14 @@ export const removeItemInCart = (id, next) => {
     next();
 }
 
+export const cartNumber = (id) => {
+    if(localStorage.getItem('cart')){
+        cart.getLocalStorage('cart');
+    }
+    let Total = 0;
+    cart.forEach((item)=>{
+        Total += item.id;
+    });
+    console.log(cart);
+    return Total;
+};

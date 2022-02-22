@@ -119,6 +119,8 @@ const AdminEditProduct = {
               
               });
         });
+        toastr.success("Bạn đã câp nhật thành công")
+
     },
 };
 export default AdminEditProduct;

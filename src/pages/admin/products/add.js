@@ -1,6 +1,9 @@
 import NavAdmin from "../../../components/NavAdmin";
 import { add } from "../../../api/product";
 import axios from "axios";
+import toastr from "toastr";
+import "toastr/build/toastr.min.css";
+
 const addProducts = {
     render() {
         return /*html */`
@@ -102,6 +105,8 @@ const addProducts = {
                     desc:document.querySelector('#desc-product').value,
                 });
             });
+            toastr.success("Bạn đã thêm thành công")
+
         });
     },
 };

@@ -57,6 +57,9 @@ const AdminProducts = {
                                 <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                                 Giá sản phẩm
                                 </th>
+                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                Mô tả
+                                </th>
                                 <th scope="col" class="relative px-6 py-3">
                                     <span class="sr-only">Edit</span>
                                 </th>
@@ -76,6 +79,9 @@ const AdminProducts = {
                                     </td>
                                     <td class="px-6 py-4 whitespace-nowrap">
                                     ${product.price}đ
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                    ${product.desc}
                                     </td>
                                     
                                     <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
